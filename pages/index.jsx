@@ -62,6 +62,5 @@ export const getServerSideProps = async () => {
       products,
       config,
     },
-    revalidate: 1,
   };
 };
