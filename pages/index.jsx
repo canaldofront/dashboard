@@ -62,5 +62,6 @@ export const getStaticProps = async () => {
       products,
       config,
     },
+    revalidate: 1,
   };
 };
