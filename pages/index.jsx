@@ -51,7 +51,7 @@ export default function Home({ orders, products, config }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const orders = await client.fetch('*[_type == "orders"]');
   const products = await client.fetch('*[_type == "products"]');
   const config = await client.fetch('*[_type == "config"][0]');
