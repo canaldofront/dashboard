@@ -1,0 +1,16 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.card {
+  @include card(2rem);
+  min-width: 22rem;
+
+  h4 {
+    margin-bottom: 2rem;
+    color: $lightBlack;
+  }
+
+  h5 {
+    font-weight: 600;
+  }
+}

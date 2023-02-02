@@ -1,0 +1,27 @@
+@import 'styles/mixins.scss';
+
+.top-sales {
+  @include card(2rem);
+
+  h3 {
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+
+      img {
+        border-radius: 2rem;
+      }
+    }
+  }
+}

@@ -9,12 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.1.5",
+    "@next/font": "13.1.1",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@sanity/image-url": "^1.0.2",
+    "@syncfusion/ej2-react-charts": "^20.4.42",
+    "@syncfusion/ej2-react-circulargauge": "^20.4.42",
+    "@syncfusion/ej2-react-dropdowns": "^20.4.42",
+    "@syncfusion/ej2-react-grids": "^20.4.43",
+    "@syncfusion/ej2-react-heatmap": "^20.4.42",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.1.1",
+    "next": "13.1.1",
+    "next-sanity": "^3.1.8",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5"
   },
   "devDependencies": {
-    "eslint": "8.32.0",
-    "eslint-config-next": "13.1.5"
+    "sass": "^1.57.1"
   }
 }

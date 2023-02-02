@@ -1,0 +1,12 @@
+@import 'styles/mixins.scss';
+
+.section {
+  .charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include device(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

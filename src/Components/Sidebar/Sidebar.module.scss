@@ -1,0 +1,73 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.sidebar {
+  background-color: $darkBlack;
+  padding: 4rem 0;
+  max-width: fit-content;
+  position: fixed;
+  height: 100%;
+  z-index: 10;
+
+  @include device(tablet) {
+    bottom: 0;
+    height: auto;
+    max-width: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .image {
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid $secondary;
+
+    @include device(tablet) {
+      display: none;
+    }
+  }
+
+  .navigation {
+    ul {
+      text-align: center;
+      list-style: none;
+
+      @include device(tablet) {
+        display: flex;
+        justify-content: center;
+      }
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1rem;
+          color: $white;
+          text-transform: uppercase;
+          display: block;
+          padding: 1.5rem 1rem;
+
+          @include device(tablet) {
+            padding: 1.5rem 2.5rem;
+          }
+
+          @include device(mobile) {
+            padding: 1.5rem 1.6rem;
+          }
+
+          svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-bottom: 0.5rem;
+          }
+
+          &:hover,
+          &.active {
+            background-color: $lightBlack;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

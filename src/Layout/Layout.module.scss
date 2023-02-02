@@ -1,0 +1,16 @@
+@import 'styles/mixins.scss';
+
+.main {
+  .content {
+    padding: 6rem;
+    width: 100%;
+    max-width: 120rem;
+    margin-left: 10.5rem;
+
+    @include device(tablet) {
+      margin-left: 0;
+      margin-bottom: 8rem;
+      padding: 3rem;
+    }
+  }
+}

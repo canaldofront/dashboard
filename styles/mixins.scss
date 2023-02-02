@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+@mixin max-width() {
+  width: 100%;
+  max-width: 106rem;
+  margin: 0 auto;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card($padding) {
+  background-color: $white;
+  box-shadow: 0.2rem 0.2rem 2rem rgba($black, 0.1);
+  padding: $padding;
+  outline: none;
+  border: none;
+}
+
+@mixin device($device) {
+  @if $device == desktop {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+
+  @if $device == notebook {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $device == tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $device == mobile {
+    @media only screen and (max-width: 425px) {
+      @content;
+    }
+  }
+}

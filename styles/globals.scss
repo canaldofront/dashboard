@@ -1,0 +1,105 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './syncfusion.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: $secondary;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $fontFamily;
+}
+
+h1,
+.h1 {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+h3,
+.h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+h4,
+.h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: $fontFamily;
+
+  &.btn-primary {
+    background-color: $primary;
+    color: $white;
+
+    &:hover:not(:disabled) {
+      cursor: pointer;
+      background-color: lighten($primary, 5);
+    }
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: $lightBlack;
+  }
+}
+
+form {
+  div {
+    margin-bottom: 3rem;
+  }
+
+  input {
+    font-family: $fontFamily;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid rgba($black, 0.42);
+    padding: 0.5rem;
+    padding-left: 0;
+
+    &::placeholder {
+      color: rgba($black, 0.42);
+      font-family: $fontFamily;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}

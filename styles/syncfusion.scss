@@ -1,0 +1,83 @@
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-react-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-react-grids/styles/material.css';
+
+// dropdownlist
+.e-ddl.e-input-group.e-control-wrapper {
+  margin-bottom: 0;
+  max-width: 30rem;
+
+  &.e-input-focus::before,
+  &.e-input-focus::after {
+    display: none;
+  }
+
+  .e-input {
+    font-family: $fontFamily;
+  }
+}
+
+.e-filter-parent .e-input-group.e-control-wrapper {
+  border-color: $primary !important;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.e-dropdownbase .e-list-item.e-active,
+.e-dropdownbase .e-list-item.e-active.e-hover {
+  color: $primary;
+}
+
+// grid
+.e-pager .e-currentitem,
+.e-pager .e-currentitem:hover {
+  background: $primary !important;
+}
+
+.e-checkbox-wrapper .e-frame.e-check,
+.e-css.e-checkbox-wrapper .e-frame.e-check,
+.e-checkbox-wrapper:hover .e-frame.e-check,
+.e-css.e-checkbox-wrapper:hover .e-frame.e-check {
+  background-color: $primary;
+}
+
+.e-btn.e-flat.e-primary,
+.e-css.e-btn.e-flat.e-primary {
+  background-color: transparent;
+  color: $black;
+
+  &:hover {
+    border-color: transparent;
+    color: $primary;
+    background-color: rgba($primary, 0.04);
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: rgba($black, 0.26);
+  }
+}
+
+.e-filter-popup .e-input-group.e-control-wrapper {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.grid-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 2rem;
+}
